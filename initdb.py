@@ -124,6 +124,12 @@ def initdb(db='bot.db'):
         'creator text,'
         'created date,'
         'primary key(user_id, channel))')
+    
+    c.execute('CREATE TABLE IF NOT EXISTS Nahty('
+        'user_id text not null,'
+        'channel integer not null,'
+        'lastseen date,'
+        'primary key(user_id, channel))')    
 
     conn.commit()
     conn.close()

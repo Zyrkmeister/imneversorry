@@ -53,9 +53,10 @@ mc = mainari.Mainari(cfg['MINECRAFT']['server'], cfg['MINECRAFT']['game_ops'], c
 km = kilometri.Kilometri()
 tar = tarot.Tarot()
 kat = kattely.Kattelija()
+puh = puhdistaja.Sade()
 nop = noppa.Noppa()
 
-objects = [rir, vit, vai, tir, opi, km, quo, que, mc, tag, tar, kis, kat, nop]
+objects = [rir, vit, vai, tir, opi, km, quo, que, mc, tag, tar, kis, kat, puh, nop]
 
 
 def allMessages(update: Update, context: CallbackContext):
